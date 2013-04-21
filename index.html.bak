@@ -1,0 +1,180 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Alexander Vezhnevets</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 80% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColFixLt #container { 
+	width: 780px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.twoColFixLt #sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 100px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px;
+}
+.twoColFixLt #mainContent { 
+	margin: 0 0 0 150px; /* the left margin on this div element creates the column down the left side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
+	padding: 0 20px 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+} 
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style><!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.twoColFixLt #sidebar1 { width: 230px; }
+</style>
+<![endif]--><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColFixLt #sidebar1 { padding-top: 30px; }
+.twoColFixLt #mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+
+<style>
+<!--
+.tab { margin-left: 40px; }
+-->
+</style>
+
+</head>
+
+<body class="twoColFixLt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h4><a href="#about">About me</a></h4>
+    <h4><a href="#publications">Publication</a></h4>
+    <h4><a href="#code">Code</a></h4>
+    <h4><a href="#contact">Contacts</a></h4>
+  </div>
+  <div id="mainContent">
+    <h2>Yuefeng Chen</h2>
+    <a id="about"></a>
+    <!-- <p ><img src="img035_small.jpg" alt="Chen Yuefeng" width="150" height="200" align="textleft" /></p> -->
+    <p ><img src="img035_small.jpg" alt="Chen Yuefeng" width="580" height="440" /></p>
+    <p >I have just completed my Master in <a href="http://www.saiip.org/">Computer Vision (SAIIP)</a> headed by 
+Prof. Qing Wang in the Department of Computer Science at Northwestern Polytechnical University, Xi'an, China. My research is in the 
+area where computer vision and machine learning collide. Now I join Baidu MMT team since April, 2013. </p>
+    <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container -->
+
+    <a id="publications"></a>
+    <hr />
+    <h2> Publications</h2>
+    <p class="tab"><b>Robust Visual Tracking Using Dynamic Classifier Selection with Sparse Representation of Label Noise</b> 
+      <br /> 
+      Yuefeng Chen, Qing Wang
+      <br /> 
+      <b>ACCV</b> 2012
+      <br /> [<a href="Pubs/2012-01-Robust Visual Tracking Using Dynamic.pdf">PDF</a>][<a href="https://github.com/phecy/ACCV2012_Code">Code</a>]<br />    
+    </p>
+<br />
+    <small>    </small>
+    
+
+        <a id="code"></a>
+<hr />
+        <h2>
+            Code</h2>
+        <h3>
+            <a name="AdaBoostTB" id="AdaBoostTB"></a>GML AdaBoost Toolbox</h3>
+            <p class="tab">
+                This is a very old toolbox of mine, that I have developed during my undergrad in
+                <a href="http://graphics.cs.msu.ru/">MSU Graphics and Media Lab</a>. After discovering
+                that it is still used (and referred to by <a href="http://en.wikipedia.org/wiki/AdaBoost">
+                    Wikipedia</a>), I have fixed couple of very old bugs, and here it is:
+            </p>
+            <p class="tab">
+                <a href="Code/AdaBoostToolbox_v0.4.zip">AdaBoost Toolbox v0.4 </a>
+            </p>
+            <p class="tab">
+                It implements couple of popular boosting methods like Real, Gentle and Modest AdaBoost
+                with decision trees weak learners. There is also a class managing cross validation
+                and option to use classifiers trained in matlab in C++ (all classes provided). See
+                manual and examples for details.</p>
+            <p class="tab">
+                The old project page can be found <a href="http://graphics.cs.msu.ru/ru/science/research/machinelearning/adaboosttoolbox">
+                    here</a>.
+            </p>
+            <p class="tab">
+                Frankly, I cannot offer much support to those of you who need help with the toolbox,
+                but you may try contacting me over email.
+            </p>
+            <h3>
+                <a name="MIM" id="MIM"></a>
+        Multi-Image Model for Semantic Segmentation</h3> 
+        <p class="tab">This is an implementation of ICCV 2011 paper "Weakly Supervised Semantic Segmentation with a Multi-image Model".
+                       It is quite raw and has certain limitations described in a README.txt file:</p>
+            <p class="tab">
+                <a href="Code/MIM_toolbox_0.2.zip">MIM toolbox v0.2 </a>
+            </p>
+             <p class="tab"> We also provide precalculated features for MSRC 21 dataset along with nessesary data structures:</p>
+ 
+            <p class="tab">
+                <a href="Code/MSRC_data.zip"> MSRC features </a>
+            </p>
+
+        <p class="tab">To start, download both (code and data) and run MainScript.m into the same folder. If you wish to apply it to your own data you will
+have to reimplement feature extraction and oversegmentation and format your data accordingly. I plan to release an updated version soon.</p>
+		<h3>
+
+            <a name="ActiveAlphaExp" id="ActiveAlphaExp"></a>Active Alpha Expansion</h3>
+            <p class="tab">
+                This is a small toolbox that implements fast alpha expansion with recycling. In words
+		  if you have to solve a lot of multi-label energy minimization problems with only difference
+		  between them nested in unary potentials - you can do it very fast with this tool.
+		  We used this code for our "Active Learning for Semantic Segmentation with Expected Change"
+		  CVPR 2012 paper. Please cite it if you use the toolbox:
+            </p>
+            <p class="tab">
+                <a href="Code/active_alpha_mex.zip">Active Alpha Expansion v0.1 </a>
+            </p>
+            <h3>
+
+        <hr />
+        <a id="contact"></a>
+            <h3>Contact information:</h3>
+    <p class="tab">F3-CC565 BaiDu Building <br />
+    10th Street, Shangdi, Haidian District<br />
+100000 Beijing
+<br /> 
+China.P.R.C
+<br />
+</p>
+    <p class="tab"> Phone: +86 186 1088 3831
+      <br />
+      E-Mail: <a href="mailto:chenyuefeng@baidu.com">chenyuefeng@baidu.com</a></p>
+  </div>
+    </div>
+</body>
+</html>
